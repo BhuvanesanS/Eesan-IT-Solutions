@@ -1,0 +1,49 @@
+.footer-social-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 56px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.footer-social-row > p {
+  margin: 0;
+  color: #ffdc7b;
+  font: 700 10px 'DM Mono', monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.footer-socials { display: flex; flex-wrap: wrap; gap: 9px; }
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 0 11px 0 8px;
+  border: 1px solid rgba(255, 255, 255, .24);
+  border-radius: 999px;
+  color: #fff;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.social-link:hover { transform: translateY(-3px); border-color: #ffc629; background: rgba(255, 198, 41, .12); }
+.social-link span { display: grid; width: 22px; height: 22px; place-items: center; border-radius: 50%; background: #ffc629; color: #171208; font-weight: 800; line-height: 1; }
+.social-link em { font: 700 10px var(--sans); font-style: normal; letter-spacing: .045em; text-transform: uppercase; }
+.social-instagram span { background: linear-gradient(135deg, #f9ce34, #ee2a7b 52%, #6228d7); color: #fff; }
+.social-facebook span { background: #1877f2; color: #fff; font-family: Arial, sans-serif; font-size: 17px; }
+.social-youtube span { background: #ff0033; color: #fff; font-size: 11px; }
+.social-whatsapp span { background: #25d366; color: #fff; }
+.social-email span { background: #f4f1e9; color: #171208; }
+
+footer .footer-bottom { margin-top: 24px; }
+
+@media (max-width: 640px) {
+  .footer-social-row { align-items: flex-start; flex-direction: column; gap: 14px; margin-top: 42px; }
+  .footer-socials { gap: 7px; }
+  .social-link { min-height: 34px; padding-right: 9px; }
+  .social-link em { font-size: 9px; }
+}
