@@ -96,7 +96,7 @@ function App() {
     }
   };
   const BrandMark = ({ footer = false }) => <a className={`brand-mark${footer ? ' brand-mark-footer' : ''}`} href="/" onClick={(event) => go(event, '/')} aria-label="Eesan IT Solutions home">
-    <img src={footer ? "/eesan-it-solutions-transparent.png" : "/eesan-it-solutions-original-cutout.png"} alt="Eesan IT Solutions" />
+    <img src={footer ? "/eesan-it-solutions-transparent.webp" : "/eesan-it-solutions-original-cutout.webp"} alt="Eesan IT Solutions" />
   </a>;
   const Header = () => <header className="header">
     <BrandMark />
@@ -118,7 +118,7 @@ function App() {
     <div className="hero-grid"></div><div className="hero-noise"></div>
     <div className="hero-copy"><p className="eyebrow"><span></span> Eesan IT Solutions</p><h1>Build digital<br /><em>with confidence.</em></h1><p className="hero-lead">From your first website to the software behind your business, we turn ideas into reliable digital products.</p><div className="hero-actions"><a className="button-lime" href="/contact" onClick={(event) => go(event, '/contact')}>Start your project <b>↗</b></a><a className="button-ghost" href="/services" onClick={(event) => go(event, '/services')}>View services <b>↓</b></a></div><div className="hero-points"><span>Websites</span><span>Software</span><span>Mobile apps</span><span>Cloud</span></div></div>
     <div className="hero-capability-bar" aria-hidden="true"><p><i></i> Digital capabilities</p><span>Web</span><span>Software</span><span>Mobile</span><span>Cloud</span><b>↗</b></div>
-    <div className="hero-3d-stage" aria-hidden="true"><i className="stage-ring ring-back"></i><i className="stage-ring ring-front"></i><i className="stage-platform"></i><img className="hero-brand-art" src="/eesan-it-solutions-original-cutout.png" alt="" /></div>
+    <div className="hero-3d-stage" aria-hidden="true"><i className="stage-ring ring-back"></i><i className="stage-ring ring-front"></i><i className="stage-platform"></i><img className="hero-brand-art" src="/eesan-it-solutions-original-cutout.webp" alt="" /></div>
     <div className="hero-shape shape-one"></div><div className="hero-shape shape-two"></div><div className="hero-orbit"><span>ideas to impact</span><i>↓</i></div>
   </section>
   <section className="service-rail">{services.map(([number, name, copy]) => <a key={number} href="/services" onClick={(event) => go(event, '/services')}><span>{number}</span><strong>{name}</strong><p>{copy}</p><b>↗</b></a>)}</section>
